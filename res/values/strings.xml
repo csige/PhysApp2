@@ -4,5 +4,6 @@
     <string name="app_name">PhysApp2</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="Hint">A &quot;Start&quot; gomb megnomása után 3s késleltetéssel indul a mérés! A mérést figyelmeztető hang jelzi!</string>
 
 </resources>

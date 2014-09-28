@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <EditText 
+        android:id="@+id/options_meres_neve_edit"
+        android:layout_height="60dp"
+        android:layout_width="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:hint="Mérés neve"/>
+    
+    <TextView 
+        android:id="@+id/options_meres_finomsaga_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Mérés finomsága"
+        android:paddingTop="30dp"
+        android:layout_below="@id/options_meres_neve_edit"/>
+    
+    <RadioGroup
+        android:id="@+id/options_meres_finomsaga_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/options_meres_finomsaga_text"
+        android:orientation="vertical"
+        android:paddingBottom="40dp" >
+        
+        <RadioButton 
+            android:id="@+id/options_normal_radiobutton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Normál"/>
+        <RadioButton 
+            android:id="@+id/options_gyors_radiobutton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Gyors"/>
+        <RadioButton 
+            android:id="@+id/options_leggyorsabb_radiobutton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Leggyorsabb"/>
+        
+    </RadioGroup>
+    
+    <TextView 
+        android:id="@+id/options_hang_ki_be_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/options_meres_finomsaga_radio_group"
+        android:text="Hang" />
+    
+    <RadioGroup 
+        android:id="@+id/options_hang_ki_be_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/options_hang_ki_be_text" >
+        
+        <RadioButton 
+            android:id="@+id/options_be_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BE"/>
+        <RadioButton 
+            android:id="@+id/options_ki_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KI"/>
+        
+    </RadioGroup>
+    
+    <Button 
+        android:id="@+id/options_tovabb_a_mereshez_button"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Tovább a méréshez"/>
+    
+
+</RelativeLayout>
